@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse-bold';
+    src: url(../../assets/Norse-Bold.otf);
+}
+
+@mixin noPaddingOrMargins() {
+    padding: 0px;
+    margin: 0px;
+}
+
+$create-account-text-color: #596D48;
+$input-border-color: #E5E7EB;
+$white-color: #FFFFFF;
+body {
+    @include noPaddingOrMargins();
+}
+
+h1,
+h2,
+h3 {
+    @include noPaddingOrMargins();
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include noPaddingOrMargins();
+    min-height: 100vh;
+}
+
+.logo-container {
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    font-family: 'Norse-Bold';
+    flex-basis: max(30%, 16rem);
+    display: flex;
+    flex-direction: column;
+    padding-top: min(20%, 12rem);
+
+    .logo-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        color: $white-color;
+        background-color: rgba(black, 0.25);
+        img {
+            width: 1.25em;
+            height: auto;
+        }
+    }
+}
+
+.sign-up-container {
+    flex-grow: 1;
+    padding: min(10rem, 10%) 2rem;
+    header {
+        width: clamp(45ch, 50%, 75ch);
+    }
+}

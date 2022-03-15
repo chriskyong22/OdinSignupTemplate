@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <meta lang="en">
+    <link rel="stylesheet" href="./styles/css/app.css">
+</head>
+<body>
+    <div class="layout">
+        <section class="logo-container">
+            <!-- <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Logo Picture">  -->
+            <div class="logo-header">
+                <img src="./assets/odin-lined.png" alt="Odin Logo">
+                <h1 class="logo-title">
+                    Odin
+                </h1>
+            </div>
+        </section>
+        <section class="sign-up-container">
+            <header>
+                <h2>
+                    This is not a real online service! You know you need something like this 
+                    in your life to help you realize your deepest dreams.
+                </h2>
+                <h2>
+                    Sign up now to get started.
+                </h2>
+                <h2>
+                    You <span class="italic">know</span> you want to.
+                </h2>
+            </header>
+            <form>
+                <fieldset>
+                    <h2>
+                        Let's do this!
+                    </h2>
+                    <div>
+                        <label for="first-name">
+                            First Name
+                        </label>
+                        <input id="first-name"/>
+                        
+                        <label for="last-name">
+                            Last Name 
+                        </label>
+                        <input id="last-name" type="text"/>
+                    </div>
+                    
+                    <div>
+                        <label for="email">
+                            Email
+                        </label>
+                        <input id="email" type="email"/>
+                        <label for="phone-number">
+                            Phone Number
+                        </label>
+                        <input id="phone-number" type="tel"/>
+                    </div>
+                    
+                    <label for="password">
+
+                    </label>
+                    <input id="password" type="password"/>
+                    <label for="confirm-password">
+
+                    </label>
+                    <input id="confirm-password" type="password"/>
+                </fieldset>
+                <button class="create-account-btn">
+                    Create Account 
+                </button>
+            </form>
+            <section aria-label="Login">
+                Already have an account? <a href="">Log in</a>
+            </section>
+        </section>
+    </div>    
+</body>
+</html>
