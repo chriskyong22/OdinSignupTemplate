@@ -116,6 +116,22 @@ h3 {
 }
 .content-container .sign-up-form fieldset .form-item input {
   width: min(240px, 90vw);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.content-container .sign-up-form fieldset .form-item input:focus {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.content-container .sign-up-form fieldset .form-item input[type=password] {
+  border-color: red;
+}
+.content-container .sign-up-form fieldset .form-item .error {
+  color: red;
+  font-weight: lighter;
+  font-size: smaller;
+  padding: 0px;
+  margin: 0px;
 }
 .content-container .sign-up-form .create-account-btn {
   margin: 2.5rem 0;

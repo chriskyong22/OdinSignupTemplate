@@ -134,6 +134,24 @@ h3 {
                 align-items: flex-start;
                 input {
                     width: min(240px, 90vw);
+                    padding: 0.25rem 0.5rem;
+                    border: 1px solid lightgrey;
+                    border-radius: 3px;
+                }
+
+                input:focus {
+                    box-shadow: 4px 4px 4px rgba(black, 0.25);
+                }
+
+                input[type=password] {
+                    border-color: red;
+                }
+
+                .error {
+                    color: red;
+                    font-weight: lighter;
+                    font-size: smaller;
+                    @include noPaddingOrMargins();
                 }
             }
         }
@@ -150,8 +168,6 @@ h3 {
             font-size: 1rem;
         }
     }
-
-
 
     .login {
         a {
