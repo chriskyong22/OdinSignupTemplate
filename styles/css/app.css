@@ -56,4 +56,8 @@ h3 {
   width: clamp(45ch, 50%, 75ch);
 }
 
+.italic {
+  font-style: italic;
+}
+
 /*# sourceMappingURL=app.css.map */
