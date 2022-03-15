@@ -15,8 +15,13 @@
 $create-account-text-color: #596D48;
 $input-border-color: #E5E7EB;
 $white-color: #FFFFFF;
+$primary-background-color: #f9fafb;
+$form-background-color: #FFFFFF;
+
+$top-padding: min(10rem, 10%);
 body {
     @include noPaddingOrMargins();
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1,
@@ -39,7 +44,7 @@ h3 {
     flex-basis: max(30%, 16rem);
     display: flex;
     flex-direction: column;
-    padding-top: min(20%, 12rem);
+    padding-top: calc($top-padding * 1.25);
 
     .logo-header {
         display: flex;
@@ -55,11 +60,52 @@ h3 {
     }
 }
 
-.sign-up-container {
+.content-container {
     flex-grow: 1;
-    padding: min(10rem, 10%) 2rem;
+    padding: $top-padding 0;
+    background-color: $primary-background-color;
     header {
         width: clamp(45ch, 50%, 75ch);
+    }
+
+    .sign-up-form {
+
+        fieldset {
+            width: 100%;
+            margin: 0px;
+            background-color: $form-background-color;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            text-transform: uppercase;
+            letter-spacing: 0.075rem;
+        }
+
+        .form-row {
+            width: max(480px, 45%);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input {
+                width: max(12vw, 240px);
+            }
+        }
+    }
+
+    & > *:not(.sign-up-form), 
+    & .sign-up-form > * {
+        padding-left: 2rem;
     }
 }
 
