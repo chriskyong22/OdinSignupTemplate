@@ -32,45 +32,55 @@
                     You <span class="italic">know</span> you want to.
                 </h2>
             </header>
-            <form>
+            <form aria-label="Sign up form">
                 <fieldset>
                     <p>
                         Let's do this!
                     </p>
-                    <div>
-                        <label for="first-name">
-                            First Name
-                        </label>
-                        <input id="first-name"/>
-                        
-                        <label for="last-name">
-                            Last Name 
-                        </label>
-                        <input id="last-name" type="text"/>
-                    </div>
+                    <section aria-label="Full Name" class="form-row"> 
+                        <div class="form-item">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                            <input id="first-name"/>
+                        </div>
+                        <div class="form-item">
+                            <label for="last-name">
+                                Last Name 
+                            </label>
+                            <input id="last-name" type="text"/>
+                        </div>
+                    </section>
                     
-                    <div>
-                        <label for="email">
-                            Email
-                        </label>
-                        <input id="email" type="email"/>
-                        <label for="phone-number">
-                            Phone Number
-                        </label>
-                        <input id="phone-number" type="tel"/>
-                    </div>
+                    <section aria-label="Email & Phone Number" class="form-row">
+                        <div class="form-item">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input id="email" type="email"/>
+                        </div>
+                        <div class="form-item">
+                            <label for="phone-number">
+                                Phone Number
+                            </label>
+                            <input id="phone-number" type="tel"/>
+                        </div>
+                    </section>
                     
-                    <div>
-                        <label for="password">
-
-                        </label>    
-                        <input id="password" type="password"/>
-                        <label for="confirm-password">
-    
-                        </label>
-                        <input id="confirm-password" type="password"/>
-                    </div>
-
+                    <section aria-label="Password" class="form-row">
+                        <div class="form-item">
+                            <label for="password">
+                                Password
+                            </label>    
+                            <input id="password" type="password"/>
+                        </div>
+                        <div class="form-item">
+                            <label for="confirm-password">
+                                Confirm Password
+                            </label>
+                            <input id="confirm-password" type="password"/>
+                        </div>
+                    </section>
                 </fieldset>
                 <button class="create-account-btn">
                     Create Account 
